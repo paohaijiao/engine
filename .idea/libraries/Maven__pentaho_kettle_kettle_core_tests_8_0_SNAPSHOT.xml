@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho-kettle:kettle-core:tests:8.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-core/8.0-SNAPSHOT/kettle-core-8.0-20180413.031547-377-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-core/8.0-SNAPSHOT/kettle-core-8.0-20180413.031547-377-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-core/8.0-SNAPSHOT/kettle-core-8.0-20180413.031547-377-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
