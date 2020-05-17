@@ -21,16 +21,20 @@
       <id>pentaho</id>
       <url>http://nexus.pentaho.org/content/groups/omni/</url>
     </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
   </repositories>
   <properties>
     <!-- Test running configuration -->
     <maven-surefire-plugin.reuseForks>false</maven-surefire-plugin.reuseForks>
     <maven-failsafe-plugin.reuseForks>false</maven-failsafe-plugin.reuseForks>
-
+    <pentaho.version>8.0.0.4-247</pentaho.version>
     <!-- Pentaho dependencies -->
-    <pentaho-reporting.version>${project.version}</pentaho-reporting.version>
-    <pentaho-registry.version>${project.version}</pentaho-registry.version>
-    <pentaho-connections.version>${project.version}</pentaho-connections.version>
+    <pentaho-reporting.version>${pentaho.version}</pentaho-reporting.version>
+    <pentaho-registry.version>${pentaho.version}</pentaho-registry.version>
+    <pentaho-connections.version>${pentaho.version}</pentaho-connections.version>
     <mondrian.version>8.0-SNAPSHOT</mondrian.version>
 
     <!-- Third-party dependencies -->
@@ -99,19 +103,20 @@
     <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
     <oro.version>2.0.8</oro.version>
     <javax.websocket-api.version>1.1</javax.websocket-api.version>
+
   </properties>
 
   <dependencies>
     <!-- Kettle dependencies -->
     <dependency>
-      <groupId>pentaho-kettle</groupId>
-      <artifactId>kettle-core</artifactId>
-      <version>${project.version}</version>
+      <groupId>com.github.paohaijiao</groupId>
+      <artifactId>core</artifactId>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.pentaho</groupId>
       <artifactId>pdi-engine-api</artifactId>
-      <version>${project.version}</version>
+      <version>${pentaho.version}</version>
     </dependency>
 
     <!-- Pentaho dependencies -->
@@ -888,7 +893,7 @@
     <dependency>
       <groupId>pentaho-kettle</groupId>
       <artifactId>kettle-core</artifactId>
-      <version>${project.version}</version>
+      <version>${pentaho.version}</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
